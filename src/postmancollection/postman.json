@@ -1,0 +1,236 @@
+{
+  "info": {
+    "_postman_id": "3bd300c2-6ddf-4eaa-9e19-fc51773696eb",
+    "name": "Estoque",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28783789"
+  },
+  "item": [
+    {
+      "name": "Listar Produtos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/produtos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrar produto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "    {\r\n        \"nome\": \"celular\",\r\n        \"descricao\": \"celular iphone preto\",\r\n        \"preco\": 5000.0,\r\n        \"qtd\": 30\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/produtos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "atualizar Produto",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n        \"nome\": \"iphone 13\",\r\n        \"descricao\": \"celular iphone preto\"\r\n       \r\n        \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/produtos/alterar/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos",
+            "alterar",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "EntradaEstoque",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n      \r\n        \"qtdOperacao\": 50\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/produtos/entrada/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos",
+            "entrada",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Saida Estoque",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n      \r\n        \"qtdOperacao\": 50\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/produtos/saida/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos",
+            "saida",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listar Produto ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/produtos/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/produtos/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "produtos",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Entrada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/historico/entrada",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "historico",
+            "entrada"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Saida",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/historico/saida",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "historico",
+            "saida"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
